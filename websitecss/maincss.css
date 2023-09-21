@@ -1,0 +1,86 @@
+
+/* template*/
+*{margin:0px;}
+
+header{  width:100%; height:fit-content; background-color:rgb(220, 243, 214);font-family: Verdana, sans-serif;}
+body{background-color:rgb(245, 255, 242);}
+.main{margin-left:14%; margin-right:14%; background-color: none; font-family: Verdana, sans-serif; }
+.content{display: flex; flex-wrap: wrap; text-align: center;}
+.logobar{margin-left: auto; margin-right:auto;}
+.logo{color:rgb(106, 95, 67); font-size: 40pt; font-weight: bold; text-shadow: 3px 3px 5px #7ca599; }
+.logo2{height:120px; width:auto; padding: 3px;padding-bottom: 0px;}
+nav{height: auto; width:auto; position:sticky; top:0;  text-align: center; font-size: 15pt;  background-color: rgb(220, 243, 214);font-family: Verdana, sans-serif;}
+a.bar:link{color:white; text-decoration: none;}
+a.bar:visited{color:white}
+a.bar:hover{color:rgb(76, 112, 67);}
+a.bar2:link{color:rgb(76, 112, 67);text-decoration: none;}
+a.bar2:visited{color:rgb(76, 112, 67);}
+a.bar2:hover{color:rgb(209, 209, 209);}
+.cart{padding: 5px 123px 0px 0px 8px; height:35px; width:35px;  margin:9px 9px 9px 0px; }
+.carticon{width:200px; flex-grow:1;text-shadow: 3px 1px 5px rgb(53, 52, 52); font-size: 18pt;}
+.navCont{background-color:rgb(175, 216, 166);border-radius:12px; margin:10px 0px 10px 10px; flex-grow:1; padding-top: 5px;text-shadow: 3px 1px 5px rgb(94, 94, 94); font-size: 18pt;}
+.social{height:40px; width:40px;margin-right: 20px;}
+
+/* home*/
+.home{display:inline-flex; flex-direction:row;  text-align:center; width:100% ; height:100%; margin-bottom: 5%;font-family: Verdana, sans-serif; }
+ul{list-style-type:circle}
+.main1{ background-color: none; width: 100%;}
+
+/* about us*/
+.aboutUs {padding: 50px;text-align: center;background-color:rgb(220, 243, 214);color:rgb(106, 95, 67); border-radius:25px;}
+.team{ display:inline-flex; flex-direction:row; text-align:center;  width:100% ; margin-bottom: 5%;}
+
+
+/* contact us */
+.main2{margin-left:14%; margin-right:14%; background-color: none; display: flex; }
+.left{padding-left: 9%; font-family: Verdana, sans-serif; }
+.right{padding-left:9%;}
+.googlemap{text-align: center;}
+a.bar4:link{color:rgb(84, 145, 69);text-decoration: none;}
+a.bar4:visited{color:rgb(84, 145, 69);}
+a.bar4:hover{color:rgb(209, 209, 209);}
+
+
+
+/* product */
+.prod{ margin: 0px 2.7% 2.7% 2.7%; text-align: center; line-height: 45px; font-size: 23px; }
+.prodimg{height:250px; width:300px; box-shadow: rgb(211, 211, 211) 0px 10px 10px; border-radius:15px;}
+.prodform{font-size: 16pt;}
+.prodbutton{width:270px ;background-color:rgb(175, 216, 166); color: white; text-shadow: 3px 1px 5px rgb(94, 94, 94); border:0px solid black; font-size: 16pt;margin: 10px 0 10px 0;}
+button.prodhov:hover{ background-color: rgb(115, 170, 102);color: white; text-shadow: 3px 1px 5px rgb(94, 94, 94);}
+button.prodclick:active{background-color:rgb(55, 99, 45); color: white; text-shadow: 3px 1px 5px rgb(94, 94, 94);}
+
+/*cart*/
+.itemname{color:rgb(76, 112, 67);}
+.carttable{text-align: center;  width:100%; background-color:rgb(220, 243, 214);color:rgb(84, 145, 69); font-size: 13pt;}
+.carthead{background-color: rgb(175, 216, 166); color:rgb(76, 112, 67);} 
+.carttotal{font-weight: bold;  }
+.cartimg{height:150px; width:auto; box-shadow: rgb(211, 211, 211) 0px 10px 10px; border-radius:15px; text-align: left; margin:10px 0px 10px 0px;}
+
+/*payment */
+.paymentMethod{font-weight: bold;border-radius:25px; display:inline-flex; flex-direction:row;text-align: left;  background-color: rgb(190, 235, 181); margin:20px 0px 40px 0px; padding: 0px 20px 0px 20px}
+.creditDebitDetail{display:inline-block; font-family: Verdana, sans-serif; margin-left: 25px;justify-content: center;}
+.BillingAdd{display:inline-block; padding-bottom:3%;}
+.paymentfield{width:179px}
+
+
+/*purchase*/
+.purchasesec{height:350px;}
+.purchaseform{border-radius:25px;margin:auto;padding: 15px 30px 10px 30px;width:fit-content; text-align: left;  background-color: rgb(190, 235, 181);}
+.purchasebutton{border-radius:12px; background-color:rgb(84, 145, 69); padding:5px; color: white; text-shadow: 3px 1px 5px rgb(0, 0, 0); font-size: 13pt;border:0px solid black;  margin: 10px 0px 0px 0px;}
+
+/*thankyou*/
+.center{text-align: center;}
+
+.flexCont{display:flex;background-color: red;margin: 20px 950px 0px 10px;}
+footer{padding:15px 0px 10px 0px;width: 100%; height: fit-content;background-color:rgb(220, 243, 214);color: rgb(106, 95, 67);font-family: Verdana, sans-serif; }
+.footer{display: flex;}
+.div1{margin: 10px auto 10px auto}
+.div2{margin: 10px auto 10px auto}
+.div3{margin: 10px auto 10px auto}
+.div4{margin: 10px auto 10px auto}
+a.bar3:link{color:rgb(84, 145, 69);text-decoration: none;}
+a.bar3:visited{color:rgb(84, 145, 69);}
+a.bar3:hover{color:rgb(255, 255, 255);}
+
+

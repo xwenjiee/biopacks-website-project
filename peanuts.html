@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Packs | Shipping Packing Peanuts</title>
+    
+        <link rel="stylesheet" href="./websitecss/maincss.css" type="text/css">
+    
+</head>
+
+<body>
+    <header >
+        
+        <table class="logobar" >
+            <td><a href="index.html"><img class="logo2"  src="./images/logo.svg"></a></td>
+            
+        </table>
+        
+       
+  </header>
+  <nav>
+    <div style=" display:flex; " >
+
+        <div class="navCont "><a  class="bar "href="index.html">Home</a></div>
+    <div class="navCont "><a class="bar "href="about.html">About Us</a></div>
+    <div class="navCont "><a class="bar "href="product.php">Products</a></div>
+        <div class="navCont"><a  class="bar "href="contact.html">Contact Us</a></div>
+        
+            <a href="mycart.html"><div class="carticon"><img class="cart" src="./images/cart.png"></div></a>
+
+    
+    </div>
+    
+</nav>
+<div style="float:left; height:100%; margin-right: 10px;"><a href="paperbag.html" ><img style="padding-top:50%"src="products/leftarrow.png"></a></div>
+<div style="float:right; height:100%; margin-left: 10px;"><a href="tape.html"><img style="padding-top:50%;"src="products/rightarrow.png"></a></div>
+
+
+    <div class="main"><br><br>
+        <div style="display:flex; overflow:scroll;">
+
+            <div style="flex-grow:1;">
+        
+                <h2>Shipping Packing Peanuts</h2>
+                
+                   <form class="prodform" >
+                    <div class="">5kg per pack<br>
+                        RM 10.00 </div>
+                    
+                        <label class="" for="peanutqty">Quantity:</label>
+                        <input type="number" id="peanutqty" min="0" max="100" value="0"  name="peanutqty">
+                         <br>
+                        <button id="peanutbutton" class="prodbutton prodhov prodclick">
+                         Add to cart
+                        </button>
+                   </form>     
+        
+            </div>
+                <div style="flex-grow:1; text-align:right;"><img style="width:auto; height:100%;"src="./products/peanuts.png">
+                </div>
+        
+        
+            </div>
+        
+            <hr>
+           
+            <h2>Product Description</h2>
+        
+            <ul>
+                <li>SIZE: Packing peanuts come in a sealed bag measuring Bag Measures: 12.5 in. wide x 12.5 in length x 7 in. height. There are enough peanuts to fill a small sized carton.</li>
+                <li>PACKING PEANUTS: These high-performance packing peanuts do an excellent job cushioning delicate and fragile items when transporting. Each peanut reliably fills up space in your box, effectively protecting each object from breaking.</li>
+                <li>QUALITY MATERIAL: Our foam popcorn is made of quality material ensuring they will not crumble or tear when in use. They are resistant to temperature fluctuations making them good for planting uses.</li>
+                <li>PLANTS: These foam peanuts are perfect to use for any of your planting needs. Just add some of these peanuts to your potted plants and they will be much easier to use without the heavy soil. They weigh much less then rocks and marbles making it easier and travel with and transport</li>
+                <li>TRANSPORT: Whether it’s for shipping or moving, our packing peanuts have got you covered! Wrap each frail item like vases or glasses in a layer of peanuts and guaranteed they will arrive safe and whole without breaking. and These will dissolve in water</li>
+        </ul>
+        
+     
+                
+    </div>
+    <br><br>
+     
+    <footer>
+        <div class= "footer">
+            <div class = "div1">
+                <a href="index.html"><img class="logo2"  src="./images/logo.svg"></a>
+            </div>
+            <div class = "div2"><b>Contact Us</b> <br><br>
+                +603 7491 8622<br>
+                5, Jalan University, <br>
+                Bandar Sunway, <br>
+                47500, <br>
+                Petaling Jaya, <br>
+                Selangor. <br>
+            </div>
+            <div class = "div3">
+                <b>Navigation </b><br><br>
+                <a class="bar3" href="index.html">Home</a> <br>
+                <a class="bar3" href="about.html">About Us</a> <br>
+                <a class="bar3" href="product.php">Products</a> <br>
+                <a class="bar3" href="mycart.html">My Cart</a> <br>
+    
+            </div>
+            <div class = "div4">
+                <b>Social Media </b><br><br>
+                <a href="https://www.facebook.com/"><img class="social"src="./images/fb.png"></a><a href="https://www.instagram.com/"><img class="social"src="./images/ig.png"></a><a href="https://twitter.com/"><img class="social"src="./images/twitter.jpg"></a><br>
+
+                <small>
+                    &copy; Copyright 1996 - 2021. All Rights Reserved. VISA <br>
+                    &copy; 2021 American Express. All rights reserved. <br>
+                    &copy; 1994-2021 Mastercard. <br>
+                </small>
+            </div>
+        </div>
+        
+    </footer>
+   
+</body>
+</html>
+<script>
+
+
+document.getElementById("peanutbutton").onclick = function () {  console.log(this.value)
+
+        
+        localStorage.setItem('peanutqty',document.getElementById("peanutqty").value )
+        window.alert("Item has been added to cart.")
+    };
+
+
+</script>

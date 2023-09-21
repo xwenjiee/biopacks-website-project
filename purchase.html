@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Packs | Order Now</title>
+    
+        <link rel="stylesheet" href="./websitecss/maincss.css" type="text/css">
+        
+    
+</head>
+
+<body>
+    <header >
+        
+        <table class="logobar" >
+            <td><a href="index.html"><img class="logo2"  src="./images/logo.svg"></a></td>
+            
+        </table>
+        
+       
+  </header>
+  <nav>
+    <div style=" display:flex; " >
+
+        <div class="navCont "><a  class="bar "href="index.html">Home</a></div>
+    <div class="navCont "><a class="bar "href="about.html">About Us</a></div>
+    <div class="navCont "><a class="bar "href="product.php">Products</a></div>
+        <div class="navCont"><a  class="bar "href="contact.html">Contact Us</a></div>
+        
+            <a href="mycart.html"><div class="carticon"><img class="cart" src="./images/cart.png"></div></a>
+
+    
+    </div>
+    
+</nav>
+
+    <div class="main" >
+        <br>
+        <h1 style="text-align: center;">Become Earth's guardian now</h1><br>
+    
+                <div class="purchasesec">
+                    <div class="purchaseform">
+                    <div class="center">
+                        <form class="purchaseform" action ="payment.php" method="post">
+
+
+                            <input type="hidden" id="boxqty" name="boxqty" value="">
+                            <input type="hidden" id="bubbleqty" name="bubbleqty" value="">
+                            <input type="hidden" id="cornqty" name="cornqty" value="">
+                            <input type="hidden" id="courierqty" name="courierqty" value="">
+                            <input type="hidden" id="honeyqty" name="honeyqty" value="">
+                            <input type="hidden" id="mushqty" name="mushqty" value="">
+                            <input type="hidden" id="paperqty" name="paperqty" value="">
+                            <input type="hidden" id="peanutqty" name="peanutqty" value="">
+                            <input type="hidden" id="tapeqty" name="tapeqty" value="">
+                            <input type="hidden" id="total" name="total" value="">
+
+                            
+                            <label style="padding-right: 70px;"for="fname"><b>First Name:</b></label><br>
+                            <input type="text" id="fname" name="fname"autocomplete="off" minlength="3" maxlength="15" required><br>
+        
+                            <label  style="padding-right: 23px;"for="contactno"><b>Contact Number:</b></label><br>
+                            <input type="number" name="contactno" id="contactno" autocomplete="off" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length == 11)return false;" required><br>
+                            <div style="color:grey; font-size: 11pt;">e.g. 01XXXXXXXX</div>
+                            
+                            <label style="padding-right: 110px;"for="email"><b>Email:</b></label><br>
+                            <input type="email" id="email" name="email" autocomplete="off" minlength="11" required><br>
+        
+                            <label style="padding-right: 15px;"for="address"><b>Shipping Address:</b></label><br>
+                            <input type="address" id="shipaddress" name="shipaddress" autocomplete="off" minlength="40" maxlength="80" required><br>
+                            <br>
+                            <div style="text-align: center;"> 
+                                <button id="confirmpurchase" class="purchasebutton" type = "submit"  method="POST"> Purchase </button>
+                            </div>
+                    
+                        </form>
+
+                    </div>
+                   
+                </div>
+                    
+                </div> 
+</div>
+
+     
+    <footer>
+        <div class= "footer">
+            <div class = "div1">
+                <a href="index.html"><img class="logo2"  src="./images/logo.svg"></a>
+            </div>
+            <div class = "div2"><b>Contact Us</b> <br><br>
+                +603 7491 8622<br>
+                5, Jalan University, <br>
+                Bandar Sunway, <br>
+                47500, <br>
+                Petaling Jaya, <br>
+                Selangor. <br>
+            </div>
+            <div class = "div3">
+                <b>Navigation </b><br><br>
+                <a class="bar3" href="index.html">Home</a> <br>
+                <a class="bar3" href="about.html">About Us</a> <br>
+                <a class="bar3" href="product.php">Products</a> <br>
+                <a class="bar3" href="mycart.html">My Cart</a> <br>
+    
+            </div>
+            <div class = "div4">
+                <b>Social Media </b><br><br>
+                <a href="https://www.facebook.com/"><img class="social"src="./images/fb.png"></a><a href="https://www.instagram.com/"><img class="social"src="./images/ig.png"></a><a href="https://twitter.com/"><img class="social"src="./images/twitter.jpg"></a><br>
+
+                <small>
+                    &copy; Copyright 1996 - 2021. All Rights Reserved. VISA <br>
+                    &copy; 2021 American Express. All rights reserved. <br>
+                    &copy; 1994-2021 Mastercard. <br>
+                </small>
+            </div>
+        </div>
+        
+    </footer>
+   
+</body>
+</html>
+<script>
+
+var idArray = ['boxqty','bubbleqty','cornqty','courierqty','honeyqty','mushqty','paperqty','peanutqty','tapeqty','total']
+
+for( var i = 0; i<10; i++){
+
+    document.getElementById(idArray[i]).value =localStorage.getItem(idArray[i]);
+
+}
+
+        
+        
+
+    /*
+    
+    var idArray = [['#boximg', '#boxname','#boxprice', '#boxqty','#boxtotal'],['#bubbleimg', '#bubblename','#bubbleprice', '#bubbleqty','#bubbletotal'],
+    ['#cornimg', '#cornname','#cornprice', '#cornqty','#corntotal'],['#courierimg', '#couriername','#courierprice', '#courierqty','#couriertotal'],
+    ['#honeyimg', '#honeyname','#honeyprice', '#honeyqty','#honeytotal'],['#mushimg', '#mushname','#mushprice', '#mushqty','#mushtotal'],
+    ['#paperimg', '#papername','#paperprice', '#paperqty','#papertotal'],['#peanutimg', '#peanutname','#peanutprice', '#peanutqty','#peanuttotal'],
+    ['#tapeimg', '#tapename','#tapeprice', '#tapeqty','#tapetotal']];
+    
+    var mainArray = [['boximg', 'boxname','boxprice', 'boxqty'],['bubbleimg', 'bubblename','bubbleprice', 'bubbleqty'],
+    ['cornimg', 'cornname','cornprice', 'cornqty'],['courierimg', 'couriername','courierprice', 'courierqty'],
+    ['honeyimg', 'honeyname','honeyprice', 'honeyqty'],['mushimg', 'mushname','mushprice', 'mushqty'],
+    ['paperimg', 'papername','paperprice', 'paperqty'],['peanutimg', 'peanutname','peanutprice', 'peanutqty'],
+    ['tapeimg', 'tapename','tapeprice', 'tapeqty']];
+    
+    var priceArray = [25.00,15.00,30.00,5.00,20.00,30.00,15.00,10.00,10.00];
+    
+    var x= 0;
+        for ( var i = 0; i<9; i++){
+            document.querySelector(idArray[i][0]).src=localStorage.getItem(mainArray[i][0])
+            document.querySelector(idArray[i][1]).innerText=localStorage.getItem(mainArray[i][1])
+            document.querySelector(idArray[i][2]).innerText=localStorage.getItem(mainArray[i][2])
+            document.querySelector(idArray[i][3]).value=localStorage.getItem(mainArray[i][3])
+             document.querySelector(idArray[i][4]).innerText=localStorage.getItem(mainArray[i][3])*priceArray[i]
+            var x = x+localStorage.getItem(mainArray[i][3])*priceArray[i]
+            
+        }   document.getElementById('#boxqty').setAttribute('value',localStorage.getItem('boxqty'));
+        console.log(document.getElementById('#boxqty').value);
+        document.getElementById("#boxqty").value = 3;
+        
+        document.querySelector('#total').value=x*/
+
+     
+    
+    </script>
+
+
+
+
+
+
+

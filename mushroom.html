@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Packs | Fragile Item Shipping Box</title>
+    
+        <link rel="stylesheet" href="./websitecss/maincss.css" type="text/css">
+    
+</head>
+
+<body>
+    <header >
+        
+        <table class="logobar" >
+            <td><a href="index.html"><img class="logo2"  src="./images/logo.svg"></a></td>
+            
+        </table>
+        
+       
+  </header>
+  <nav>
+    <div style=" display:flex; " >
+
+        <div class="navCont "><a  class="bar "href="index.html">Home</a></div>
+    <div class="navCont "><a class="bar "href="about.html">About Us</a></div>
+    <div class="navCont "><a class="bar "href="product.php">Products</a></div>
+        <div class="navCont"><a  class="bar "href="contact.html">Contact Us</a></div>
+        
+            <a href="mycart.html"><div class="carticon"><img class="cart" src="./images/cart.png"></div></a>
+
+    
+    </div>
+    
+</nav>
+<div style="float:left; height:100%; margin-right: 10px;"><a href="honeycomb.html" ><img style="padding-top:50%"src="products/leftarrow.png"></a></div>
+<div style="float:right; height:100%; margin-left: 10px;"><a href="paperbag.html"><img style="padding-top:50%;"src="products/rightarrow.png"></a></div>
+
+
+
+    <div class="main"><br><br>
+        
+        <div style="display:flex; overflow: scroll;">
+
+            <div style="flex-grow:1;">
+        
+                <h2>Fragile Item Shipping Box</h2>
+                
+                   <form class="prodform" >
+                    <div class="">10 pieces per set<br>
+                        RM 30.00 </div>
+                    
+                        <label class="" for="mushqty">Quantity:</label>
+                        <input type="number" id="mushqty" min="0" max="100" value="0"  name="mushqty">
+                         <br>
+                        <button id="mushbutton" class="prodbutton prodhov prodclick">
+                         Add to cart
+                        </button>
+                   </form>     
+        
+            </div>
+                <div style="flex-grow:1; text-align:right;"><img style="width:auto; height:100%;"src="./products/mushroom.png">
+                </div>
+        
+            </div>
+        
+            <hr>
+           
+            <h2>Product Description</h2>
+        
+            <ul>
+                <li>100% biodegradable and renewable material that can be recycled directly in and by nature.</li>
+                <li>Mushroom Packaging contributes to “up-cycling” by providing new value to agricultural waste that otherwise has few other uses and low economic value.</li>
+                <li>Made up of fungus roots and residues from farming. Stronger than its foam predecessor, flame-resistant.</li>
+                <li>After using this, it can be broken down in the compost at home. Using mushrooms inherent growth power, packaging can be manufactured with minimal energy use. The manufacturing process begins by mixing fungus sprouts, or mycelia, with seedlings or other residues from agriculture. Mycelium consists of a network of wire-like cells that act as a natural adhesive.</li>
+                <li>Without the need for either light, water or chemical additives, the mycelium grows by and around the residues to the desired packaging form. After one week, growth is stopped by a drying and heat treatment process. The result is a fully natural composite material that has similar material properties like synthetic foam plastics such as styrofoam.</li>
+        </ul>
+                <h2>Advantages: </h2>
+                <ol>
+                    <li>100 percent biodegradable and renewable material</li>
+                    <li>“Up-cycling” – waste becomes raw material</li>
+                    <li>Compostable at home</li>
+                    <li>Low energy consumption</li>
+                    <li>Low CO2 emissions</li>
+                </ol>
+     
+                
+    </div>
+    <br><br>
+     
+    <footer>
+        <div class= "footer">
+            <div class = "div1">
+                <a href="index.html"><img class="logo2"  src="./images/logo.svg"></a>
+            </div>
+            <div class = "div2"><b>Contact Us</b> <br><br>
+                +603 7491 8622<br>
+                5, Jalan University, <br>
+                Bandar Sunway, <br>
+                47500, <br>
+                Petaling Jaya, <br>
+                Selangor. <br>
+            </div>
+            <div class = "div3">
+                <b>Navigation </b><br><br>
+                <a class="bar3" href="index.html">Home</a> <br>
+                <a class="bar3" href="about.html">About Us</a> <br>
+                <a class="bar3" href="product.php">Products</a> <br>
+                <a class="bar3" href="mycart.html">My Cart</a> <br>
+    
+            </div>
+            <div class = "div4">
+                <b>Social Media </b><br><br>
+                <a href="https://www.facebook.com/"><img class="social"src="./images/fb.png"></a><a href="https://www.instagram.com/"><img class="social"src="./images/ig.png"></a><a href="https://twitter.com/"><img class="social"src="./images/twitter.jpg"></a><br>
+
+                <small>
+                    &copy; Copyright 1996 - 2021. All Rights Reserved. VISA <br>
+                    &copy; 2021 American Express. All rights reserved. <br>
+                    &copy; 1994-2021 Mastercard. <br>
+                </small>
+            </div>
+        </div>
+        
+    </footer>
+   
+</body>
+</html>
+<script>
+    
+
+
+document.getElementById("mushbutton").onclick = function () {  console.log(this.value)
+
+        
+        localStorage.setItem('mushqty',document.getElementById("mushqty").value )
+        window.alert("Item has been added to cart.")
+    };
+
+
+</script>
+

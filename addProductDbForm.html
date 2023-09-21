@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Packs Admin | Add a new product</title>
+    
+        <link rel="stylesheet" href="./websitecss/maincss.css" type="text/css">
+    
+</head>
+
+<body>
+    <header >
+        
+        <table class="logobar" >
+            <td><a href="index.html"><img class="logo2"  src="./images/logo.svg"></a></td>
+            
+        </table>
+        
+       
+  </header>
+  <nav>
+    <div style=" display:flex; " >
+
+        <div class="navCont "><a  class="bar "href="index.html">Home</a></div>
+    <div class="navCont "><a class="bar "href="about.html">About Us</a></div>
+    <div class="navCont "><a class="bar "href="product.php">Products</a></div>
+        <div class="navCont"><a  class="bar "href="contact.html">Contact Us</a></div>
+        
+            <a href="mycart.html"><div class="carticon"><img class="cart" src="./images/cart.png"></div></a>
+
+    
+    </div>
+    
+</nav>
+
+    <div class="main">
+        <br>
+        <h1 style="text-align: center;">Add a new product</h1><br>
+        <form class="purchaseform" action ="ProductDbAction.php" method="post">
+            <label style="padding-right: 20px;"for="productName"><b>PRODUCT NAME:</b></label><br>
+            <input type="text" id="productName" name="productName" value=" "><br>
+
+            <label style="padding-right: 50px;" for="productLink"><b>IMAGE LINK:</b></label><br>
+            <input type="text" id="productLink" name="productLink" value=" "><br>
+
+            <label style="padding-right: 107px;"for="productPrice"><b>PRICE:</b></label><br>
+            <input type="text" id="productPrice" name="productPrice" value=" "><br>
+
+            <label for="productDesc"><b>DESCRIPTION LINK:</b></label><br>
+            <input type="text" id="productDesc" name="productDesc" value=" "><br>
+                <br>
+
+            <div class = "button"> 
+                <button class="purchasebutton"type = "submit" action="ProductDbAction.php" method="POST"> UPLOAD DATA </button>
+            </div>
+    
+        </form>
+        
+        <br><br>
+        
+     
+                
+    </div>
+
+     
+    <footer>
+        <div class= "footer">
+            <div class = "div1">
+                <a href="index.html"><img class="logo2"  src="./images/logo.svg"></a>
+            </div>
+            <div class = "div2"><b>Contact Us</b> <br><br>
+                +603 7491 8622<br>
+                5, Jalan University, <br>
+                Bandar Sunway, <br>
+                47500, <br>
+                Petaling Jaya, <br>
+                Selangor. <br>
+            </div>
+            <div class = "div3">
+                <b>Navigation </b><br><br>
+                <a class="bar3" href="index.html">Home</a> <br>
+                <a class="bar3" href="about.html">About Us</a> <br>
+                <a class="bar3" href="product.php">Products</a> <br>
+                <a class="bar3" href="mycart.html">My Cart</a> <br>
+    
+            </div>
+            <div class = "div4">
+                <b>Social Media </b><br><br>
+                <a href="https://www.facebook.com/"><img class="social"src="./images/fb.png"></a><a href="https://www.instagram.com/"><img class="social"src="./images/ig.png"></a><a href="https://twitter.com/"><img class="social"src="./images/twitter.jpg"></a><br>
+
+                <small>
+                    &copy; Copyright 1996 - 2021. All Rights Reserved. VISA <br>
+                    &copy; 2021 American Express. All rights reserved. <br>
+                    &copy; 1994-2021 Mastercard. <br>
+                </small>
+            </div>
+        </div>
+        
+    </footer>
+   
+</body>
+</html>

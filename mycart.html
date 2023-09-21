@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Packs | My Cart</title>
+    
+        <link rel="stylesheet" href="./websitecss/maincss.css" type="text/css">
+        
+    
+</head>
+
+<body>
+    <header >
+        
+        <table class="logobar" >
+            <td><a href="index.html"><img class="logo2"  src="./images/logo.svg"></a></td>
+            
+        </table>
+        
+       
+  </header>
+  <nav>
+    <div style=" display:flex; " >
+
+        <div class="navCont "><a  class="bar "href="index.html">Home</a></div>
+    <div class="navCont "><a class="bar "href="about.html">About Us</a></div>
+    <div class="navCont "><a class="bar "href="product.php">Products</a></div>
+        <div class="navCont"><a  class="bar "href="contact.html">Contact Us</a></div>
+        
+           <a href="mycart.html"><div class="carticon"><img class="cart" src="./images/cart.png"></div></a>
+
+            <style>
+                
+            </style>
+    </div>
+    
+</nav>
+
+    <div class="main">
+        <br>
+        <h1 style="padding-left:30px">Cart</h1>
+        <br>
+   
+        
+            <table class="carttable">
+                <tr class="carthead">
+                    <th style="padding:8px"colspan='3'><h2>Product</h2></th>
+                    <th ><h2>Quantity</h2></th>
+                    <th colspan='2' style="width: 100px;"><h2>Total</h2></th>
+                    
+                </tr>
+                <tr >
+                    <td ><a href="box.html"><img class="cartimg" id="boximg"src=""></a></td>
+                    <td ><a class="bar3" id="boxname" href="box.html"></a></td>
+                    <td  id="boxprice"></td>
+                    <td id="boxqty"></td>
+                    <td class="carttotal"style="width: 40px;">RM</td>
+                    <td class="carttotal" id="boxtotal"></td>
+                    
+                    
+                </tr>
+              
+                <tr>
+                    <td ><a href="bubblewrap.html"><img class="cartimg" id="bubbleimg"src=""></a></td>
+                    <td><a class="bar3" id="bubblename" href="bubblewrap.html"></a></td>
+                    <td id="bubbleprice"></td>
+                    <td id="bubbleqty"></td>
+                    <td class="carttotal">RM</td>
+                    <td class="carttotal" id="bubbletotal"></td>
+                    
+                </tr>
+              
+                <tr>
+                    <td ><a href="cornstarch.html"><img class="cartimg" id="cornimg"src=""></a></td>
+                    <td><a class="bar3" id="cornname" href="cornstarch.html"></a></td>
+                    <td id="cornprice"></td>
+                    <td id="cornqty"></td>
+                    <td class="carttotal">RM</td>
+                    <td class="carttotal" id="corntotal"></td>
+                    
+                </tr>
+               
+                <tr>
+                    <td ><a href="courierbag.html"><img class="cartimg" id="courierimg"src=""></a></td>
+                    <td><a class="bar3" id="couriername" href="courierbag.html"></a></td>
+                    <td id="courierprice"></td>
+                    <td id="courierqty"></td>
+                    <td class="carttotal">RM</td>
+                    <td class="carttotal" id="couriertotal"></td>
+                    
+                </tr>
+               
+                <tr>
+                    <td ><a href="honeycomb.html"><img class="cartimg" id="honeyimg"src=""></a></td>
+                    <td><a class="bar3" id="honeyname" href="honeycomb.html"></a></td>
+                    <td id="honeyprice"></td>
+                    <td id="honeyqty"></td>
+                    <td class="carttotal">RM</td>
+                    <td class="carttotal" id="honeytotal"></td>
+                    
+                </tr>
+                
+                <tr>
+                    <td ><a href="mushroom.html"><img class="cartimg" id="mushimg"src=""></a></td>
+                    <td><a class="bar3" id="mushname" href="mushroom.html"></a></td>
+                    <td id="mushprice"></td>
+                    <td id="mushqty"></td>
+                    <td class="carttotal">RM</td>
+                    <td class="carttotal" id="mushtotal"></td>
+                    
+                </tr>
+                
+                <tr>
+                    <td ><a href="paperbag.html"><img class="cartimg" id="paperimg"src=""></a></td>
+                    <td><a class="bar3" id="papername" href="paperbag.html"></a></td>
+                    <td id="paperprice"></td>
+                    <td id="paperqty"></td>
+                    <td class="carttotal">RM</td>
+                    <td class="carttotal" id="papertotal"></td>
+                    
+                </tr>
+                
+                <tr>
+                    <td ><a href="peanuts.html"><img class="cartimg" id="peanutimg"src=""></a></td>
+                    <td><a class="bar3" id="peanutname" href="peanuts.html"></a></td>
+                    <td id="peanutprice"></td>
+                    <td id="peanutqty"></td>
+                    <td class="carttotal">RM</td>
+                    <td class="carttotal" id="peanuttotal"></td>
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td ><a href="tape.html"><img class="cartimg" id="tapeimg"src=""></a></td>
+                    <td><a class="bar3" id="tapename" href="tape.html"></a></td>
+                    <td id="tapeprice"></td>
+                    <td id="tapeqty"></td>
+                    <td class="carttotal">RM</td>
+                    <td class="carttotal" id="tapetotal"></td>
+                    
+                    
+                </tr>
+               
+            </table>
+        <form action="purchase.html" method="post">
+            <br>
+        <div style="text-align: right;"><h1 >Your total is: RM<span id="total"></span></h1></div>
+        
+        
+
+        <div style="text-align: right;"><button id="checkout" class="purchasebutton" type="submit">Continue To Checkout</button></div>
+    </form>  
+  
+     <br>    
+          
+    </div>
+
+     
+    <footer>
+        <div class= "footer">
+            <div class = "div1">
+                <a href="index.html"><img class="logo2"  src="./images/logo.svg"></a>
+            </div>
+            <div class = "div2"><b>Contact Us</b> <br><br>
+                +603 7491 8622<br>
+                5, Jalan University, <br>
+                Bandar Sunway, <br>
+                47500, <br>
+                Petaling Jaya, <br>
+                Selangor. <br>
+            </div>
+            <div class = "div3">
+                <b>Navigation </b><br><br>
+                <a class="bar3" href="index.html">Home</a> <br>
+                <a class="bar3" href="about.html">About Us</a> <br>
+                <a class="bar3" href="product.php">Products</a> <br>
+                <a class="bar3" href="mycart.html">My Cart</a> <br>
+    
+            </div>
+            <div class = "div4">
+                <b>Social Media </b><br><br>
+                <a href="https://www.facebook.com/"><img class="social"src="./images/fb.png"></a><a href="https://www.instagram.com/"><img class="social"src="./images/ig.png"></a><a href="https://twitter.com/"><img class="social"src="./images/twitter.jpg"></a><br>
+
+                <small>
+                    &copy; Copyright 1996 - 2021. All Rights Reserved. VISA <br>
+                    &copy; 2021 American Express. All rights reserved. <br>
+                    &copy; 1994-2021 Mastercard. <br>
+                </small>
+            </div>
+        </div>
+        
+    </footer>
+   
+</body>
+</html>
+<script>
+
+var idArray = [['#boximg', '#boxname','#boxprice', '#boxqty','#boxtotal'],['#bubbleimg', '#bubblename','#bubbleprice', '#bubbleqty','#bubbletotal'],
+['#cornimg', '#cornname','#cornprice', '#cornqty','#corntotal'],['#courierimg', '#couriername','#courierprice', '#courierqty','#couriertotal'],
+['#honeyimg', '#honeyname','#honeyprice', '#honeyqty','#honeytotal'],['#mushimg', '#mushname','#mushprice', '#mushqty','#mushtotal'],
+['#paperimg', '#papername','#paperprice', '#paperqty','#papertotal'],['#peanutimg', '#peanutname','#peanutprice', '#peanutqty','#peanuttotal'],
+['#tapeimg', '#tapename','#tapeprice', '#tapeqty','#tapetotal']];
+
+var mainArray = [['boximg', 'boxname','boxprice', 'boxqty'],['bubbleimg', 'bubblename','bubbleprice', 'bubbleqty'],
+['cornimg', 'cornname','cornprice', 'cornqty'],['courierimg', 'couriername','courierprice', 'courierqty'],
+['honeyimg', 'honeyname','honeyprice', 'honeyqty'],['mushimg', 'mushname','mushprice', 'mushqty'],
+['paperimg', 'papername','paperprice', 'paperqty'],['peanutimg', 'peanutname','peanutprice', 'peanutqty'],
+['tapeimg', 'tapename','tapeprice', 'tapeqty']];
+
+var priceArray = [25.00,15.00,30.00,5.00,20.00,30.00,15.00,10.00,10.00];
+
+
+
+var x= 0;
+
+for ( var i = 0; i<9; i++){
+        document.querySelector(idArray[i][0]).src=localStorage.getItem(mainArray[i][0])
+        document.querySelector(idArray[i][1]).innerText=localStorage.getItem(mainArray[i][1])
+        document.querySelector(idArray[i][2]).innerText=localStorage.getItem(mainArray[i][2])
+        document.querySelector(idArray[i][3]).innerText=localStorage.getItem(mainArray[i][3])
+         document.querySelector(idArray[i][4]).innerText=localStorage.getItem(mainArray[i][3])*priceArray[i]
+        var x = x+localStorage.getItem(mainArray[i][3])*priceArray[i]
+        
+    };
+
+    document.querySelector('#total').innerText=x
+
+    
+    document.getElementById("checkout").onclick = function () {  console.log(this.value)
+
+    localStorage.setItem('total',x)
+
+
+};
+
+
+
+
+
+/**
+
+    if(localStorage.getItem('boxqty')>0){
+
+        document.querySelector('#boximg').src=localStorage.getItem('boximg')
+        document.querySelector('#boxname').innerText=localStorage.getItem('boxname')
+        document.querySelector('#boxprice').innerText=localStorage.getItem('boxprice')
+        document.querySelector('#boxqty').innerText=localStorage.getItem('boxqty')
+        
+
+    }
+    if(localStorage.getItem('bubbleqty')>0){
+
+document.querySelector('#bubbleimg').src=localStorage.getItem('bubbleimg')
+document.querySelector('#bubblename').innerText=localStorage.getItem('bubblename')
+document.querySelector('#bubbleprice').innerText=localStorage.getItem('bubbleprice')
+document.querySelector('#bubbleqty').innerText=localStorage.getItem('bubbleqty')
+
+
+}
+if(localStorage.getItem('cornqty')>0){
+
+document.querySelector('#cornimg').src=localStorage.getItem('cornimg')
+document.querySelector('#cornname').innerText=localStorage.getItem('cornname')
+document.querySelector('#cornprice').innerText=localStorage.getItem('cornprice')
+document.querySelector('#cornqty').innerText=localStorage.getItem('cornqty')
+
+
+}
+if(localStorage.getItem('courierqty')>0){
+
+document.querySelector('#courierimg').src=localStorage.getItem('courierimg')
+document.querySelector('#couriername').innerText=localStorage.getItem('couriername')
+document.querySelector('#courierprice').innerText=localStorage.getItem('courierprice')
+document.querySelector('#courierqty').innerText=localStorage.getItem('courierqty')
+
+
+}
+if(localStorage.getItem('honeyqty')>0){
+
+document.querySelector('#honeyimg').src=localStorage.getItem('honeyimg')
+document.querySelector('#honeyname').innerText=localStorage.getItem('honeyname')
+document.querySelector('#honeyprice').innerText=localStorage.getItem('honeyprice')
+document.querySelector('#honeyqty').innerText=localStorage.getItem('honeyqty')
+
+
+}
+if(localStorage.getItem('mushqty')>0){
+
+document.querySelector('#mushimg').src=localStorage.getItem('mushimg')
+document.querySelector('#mushname').innerText=localStorage.getItem('mushname')
+document.querySelector('#mushprice').innerText=localStorage.getItem('mushprice')
+document.querySelector('#mushqty').innerText=localStorage.getItem('mushqty')
+
+
+}
+
+if(localStorage.getItem('paperqty')>0){
+
+document.querySelector('#paperimg').src=localStorage.getItem('paperimg')
+document.querySelector('#papername').innerText=localStorage.getItem('papername')
+document.querySelector('#paperprice').innerText=localStorage.getItem('paperprice')
+document.querySelector('#paperqty').innerText=localStorage.getItem('paperqty')
+
+
+}
+
+if(localStorage.getItem('peanutqty')>0){
+
+document.querySelector('#peanutimg').src=localStorage.getItem('peanutimg')
+document.querySelector('#peanutname').innerText=localStorage.getItem('peanutname')
+document.querySelector('#peanutprice').innerText=localStorage.getItem('peanutprice')
+document.querySelector('#peanutqty').innerText=localStorage.getItem('peanutqty')
+
+
+}
+
+if(localStorage.getItem('tapeqty')>0){
+
+document.querySelector('#tapeimg').src=localStorage.getItem('tapeimg')
+document.querySelector('#tapename').innerText=localStorage.getItem('tapename')
+document.querySelector('#tapeprice').innerText=localStorage.getItem('tapeprice')
+document.querySelector('#tapeqty').innerText=localStorage.getItem('tapeqty')
+
+
+}**/
+
+    
+</script>
